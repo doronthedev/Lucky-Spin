@@ -1,7 +1,7 @@
 const Data = {
   names: [
     { name: '💔', chance: 2 },
-    { name: '❤️', chance: 10 },
+    { name: '❤️', chance: 8 },
     { name: '❤️❤️', chance: 6 },
     { name: '❤️❤️❤️', chance: 4 },
     { name: '✨🎫*2', chance: 1 },
