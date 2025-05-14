@@ -1,9 +1,11 @@
 const Data = {
   names: [
-    { name: 'Alice', chance: 3 },
-    { name: 'Bob', chance: 1 },
-    { name: 'Charlie', chance: 2 },
-    { name: 'Dora', chance: 10 },
+    { name: '💔', chance: 2 },
+    { name: '❤️', chance: 10 },
+    { name: '❤️❤️', chance: 6 },
+    { name: '❤️❤️❤️', chance: 4 },
+    { name: '✨🎫*2', chance: 1 },
+    { name: '🔥', chance: 1 },
   ],
   numberOfSpin: 0,
 };
