@@ -10,6 +10,8 @@ const Data = {
   numberOfSpin: 0,
 };
 
+const music = new Audio('../music.mp3');
+
 document.addEventListener('DOMContentLoaded', () => {
   getData(Data);
   displayPrizes();
@@ -59,6 +61,8 @@ function spinWheel() {
   const winnerDiv = document.querySelector('.displayWinner');
   const weightedList = createWeightedList(Data.names);
 
+  music.play();
+  
   let spinInterval = setInterval(() => {
     const name = weightedList[Math.floor(Math.random() * weightedList.length)];
     displayDiv.innerHTML = `<div style="opacity: 0.6; font-size: 3rem;">${name}</div>`;
@@ -70,6 +74,8 @@ function spinWheel() {
     winnerDiv.innerHTML = `You won: ${winner}`;
     displayDiv.innerHTML = `<div style="font-size: 4rem;">🎉 ${winner} 🎉</div>`;
 
+    music.pause();
+    
     Data.numberOfSpin += 1;
     saveData(Data);
   }, 6000); // stop after 6 seconds
